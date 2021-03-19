@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductListActivity">
+
+    <LinearLayout
+        android:id="@+id/contentLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="536dp"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:id="@+id/excelMailId"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:onClick="createExcelAndSendMainBtn"
+            android:text="Tạo file excel và gửi mail" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:cropToPadding="true"
+        android:background="@drawable/vienoval"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:srcCompat="@android:drawable/ic_menu_add" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductListActivity">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:background="#FFFFFF" />
+
+
+
+    <Button
+        android:id="@+id/imageBillButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:cropToPadding="true"
+        android:textSize="32sp"
+        android:background="@drawable/vienoval" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_below="@+id/productRecyclerView"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/selectAllOrDesSelectedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="selectAllOrDesSelected"
+            android:text="@string/checkall" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="gopBill"
+            android:text="@string/garther" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="xoaBill"
+            android:text="@string/delete" />
+    </LinearLayout>
+
+</RelativeLayout>

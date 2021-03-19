@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Tony4Men Inventory</string>
+    <string name="danh_sach">Danh Sách</string>
+    <string name="cai_dat">Cài Đặt</string>
+    <string name="tao_phieu">Tạo Phiếu</string>
+    <string name="tieu_de">Tiêu đê(*)</string>
+    <string name="hint_title">Tên phiếu kiểm kho (bắt buộc)</string>
+
+    <string name="ten_phieu">Tên phiếu: </string>
+    <string name="loai_phieu">Loại phiếu</string>
+    <string name="mo_ta">Mô tả</string>
+    <string name="huy">Hủy</string>
+    <string name="save">Lưu</string>
+    <string name="ma_hang">Mã hàng</string>
+    <string name="ten_hang">Tên hàng</string>
+    <string name="so_luong_goc">Số lượng gốc</string>
+    <string name="tong_so_san_pham">Tổng số sản phẩm</string>
+    <string name="so_luong_thuc">Số lượng thực</string>
+    <string name="gia">Giá</string>
+    <string name="back">Hủy</string>
+    <string name="checkall">Chọn hết</string>
+    <string name="delete">Xóa</string>
+    <string name="garther">Gộp</string>
+</resources>
